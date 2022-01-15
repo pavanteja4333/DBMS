@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>NALA</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+  #close:hover{
+      background-color: red;
+      color: whitesmoke;}
+  #outbox button{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 60%;
+      background-color: white;
+      text-align: left;
+      margin-left: 5px;
+      height: 40px;
+      border:none;
+      border-radius: 5px;
+      padding-left: 20px;
+      box-shadow: 2px 4px grey;
+  }
+   </style>
+</head>
+<body id="top">
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <div class="fl_left">
+      <ul class="nospace">
+        <li><a href="home.php"><i class="fas fa-home fa-lg"></i></a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul class="nospace">
+        <li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>
+        <li><i class="fas fa-envelope rgtspace-5"></i> nalaconstruction@gmail.com</li>
+        <li><div class="dropdown"> 
+          <img src="images/demo/backgrounds/34.png" style="border-radius: 50px;width: 35px;width: 35px;">
+            
+          <div class="dropdown-content"> 
+              <a href="profile.php">profile</a>
+              <hr>
+              <a href="#">Sign Out</a>
+          </div> 
+      </div> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!---------------------------------------------------------->
+
+
+<section class="container-fluid">
+    <article>
+      <div class="container-fluid">
+        <br>
+        <!-- Button to Open the Modal -->
+        <button style="margin-left: 1325px;" type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">
+          Add Project
+        </button>
+        <br>
+      
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Add Project</h4>
+                
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form action="/action_page.php">
+                  <div class="form-group">
+                    <label for="email">Tittle</label>
+                    <input type="text" class="form-control" placeholder="Enter Tittle" id="tittle" autocomplete="tittle">
+                  </div>
+                  <div class="form-group">
+                    <label for="Area">Area</label>
+                    <input type="text" class="form-control" placeholder="Enter Area" id="Area">
+                  </div>
+                  <div class="form-group">
+                    <label for="Priority">Priority</label>
+                    <input type="text" class="form-control" placeholder="Enter priority" id="priority">
+                  </div>
+                  <div class="form-group">
+                    <label for="startdate">Team Leader id</label>
+                    <input type="number" class="form-control" placeholder="enter team leader id" id="teamleaderid">
+                </div>
+                  <div class="form-group">
+                      <label for="startdate">start Date</label>
+                      <input type="date" class="form-control" id="startdate">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="enddate">End Date</label>
+                    <input type="date" class="form-control" id="enddate">
+                </div>
+
+                <div class="form-group">
+                    <label for="employee1">Civil Engineer</label>
+                    <input type="number" placeholder="enter employee id" class="form-control" id="employee1">
+                </div>
+
+                <div class="form-group">
+                    <label for="employee2">Architect</label>
+                    <input type="number" placeholder="enter employee id" class="form-control" id="employee1">
+                </div>
+
+                <div class="form-group">
+                    <label for="employee3">Technical Engineer</label>
+                    <input type="number" placeholder="enter employee id" class="form-control" id="employee1">
+                </div>
+
+                 <button type="submit" class="btn btn-primary">Confirm</button>
+                </form>
+              </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div></article></section>
+  <br>
+<br>
+
+   <!-------card for added projects-->
+   <div class="container-fluid">
+
+    <div class="row mb-5">
+      <div class="col-lg-4 col-md-4 col-12">
+        
+          <div class="card">
+            
+            <div class="card-body">
+              <h1 class="card-tittle text-center">Proj tittle 1</h1><br>
+              <table class="table table-borderless">
+                <tbody>
+                  <tr>
+                    <td>Tittle</td>
+                    <td>tittle1</td>
+                   
+                  </tr>
+                  <tr>
+                    <td>Area</td>
+                    <td>area1</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Priority</td>
+                    <td>Priority1</td>
+               
+                  </tr>
+
+                  <tr>
+                    <td>Team Leader id</td>
+                    <td>leader id1</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Start Date</td>
+                    <td>date 1</td>
+                  </tr>
+
+                  <tr>
+                    <td>End Date</td>
+                    <td>end date1</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Civil Engineer</td>
+                    <td>employee11</td>
+                  </tr>
+                  <tr>
+                    <td>Architect</td>
+                    <td>employee12</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Technical Engineer</td>
+                    <td>employee13</td>
+                  </tr>
+                </tbody>
+              </table>
+
+<!----------------------check my method in the below form-->
+
+                <form action="/action.php" method="POST">
+                <div class="form-group"></div>
+                <input type="button" class="btn bg-warning" value="Delete">
+                </form>
+            </div>
+          
+          </div>
+          </div>
+        
+    <!-----1sr row 2nd card-->  
+    <div class="col-lg-4 col-md-4 col-12">
+        
+      <div class="card">
+        
+        <div class="card-body">
+          <h1 class="card-tittle text-center">Proj tittle 2</h1><br>
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <td>Tittle</td>
+                <td>tittle1</td>
+               
+              </tr>
+              <tr>
+                <td>Area</td>
+                <td>area1</td>
+              
+              </tr>
+              <tr>
+                <td>Priority</td>
+                <td>Priority1</td>
+           
+              </tr>
+
+              <tr>
+                <td>Team Leader id</td>
+                <td>leader id1</td>
+              
+              </tr>
+              <tr>
+                <td>Start Date</td>
+                <td>date 1</td>
+              </tr>
+
+              <tr>
+                <td>End Date</td>
+                <td>end date1</td>
+              
+              </tr>
+              <tr>
+                <td>Civil Engineer</td>
+                <td>employee11</td>
+              </tr>
+              <tr>
+                <td>Architect</td>
+                <td>employee12</td>
+              
+              </tr>
+              <tr>
+                <td>Technical Engineer</td>
+                <td>employee13</td>
+              </tr>
+            </tbody>
+          </table>
+
+<!----------------------check my method in the below form-->
+
+            <form action="/action.php" method="POST">
+            <div class="form-group"></div>
+            <input type="button" class="btn bg-warning" value="Delete">
+            </form>
+        </div>
+      
+      </div>
+      </div>
+           
+    <!--1st row 2nd card end-->
+    <!--1st row 3rd card start-->
+    <div class="col-lg-4 col-md-4 col-12">
+        
+      <div class="card">
+        
+        <div class="card-body">
+          <h1 class="card-tittle text-center">Proj tittle 3</h1><br>
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <td>Tittle</td>
+                <td>tittle1</td>
+               
+              </tr>
+              <tr>
+                <td>Area</td>
+                <td>area1</td>
+              
+              </tr>
+              <tr>
+                <td>Priority</td>
+                <td>Priority1</td>
+           
+              </tr>
+
+              <tr>
+                <td>Team Leader id</td>
+                <td>leader id1</td>
+              
+              </tr>
+              <tr>
+                <td>Start Date</td>
+                <td>date 1</td>
+              </tr>
+
+              <tr>
+                <td>End Date</td>
+                <td>end date1</td>
+              
+              </tr>
+              <tr>
+                <td>Civil Engineer</td>
+                <td>employee11</td>
+              </tr>
+              <tr>
+                <td>Architect</td>
+                <td>employee12</td>
+              
+              </tr>
+              <tr>
+                <td>Technical Engineer</td>
+                <td>employee13</td>
+              </tr>
+            </tbody>
+          </table>
+
+<!----------------------check my method in the below form-->
+
+            <form action="/action.php" method="POST">
+            <div class="form-group"></div>
+            <input type="button" class="btn bg-warning" value="Delete">
+            </form>
+        </div>
+      
+      </div>
+      </div>
+    <!--1st row 3rd card end-->
+    
+          </div>
+ </div>
+  
+  <br><br>
+  
+
+  <!---end for card for ended projects -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
